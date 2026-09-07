@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jlochter.github.io/motorista.seujoao/sitemap.xml

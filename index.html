@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Luiz Lochter · Transporte Executivo em Sorocaba</title>
+  <meta name="description" content="Motorista particular em Sorocaba: transfer para aeroportos de Campinas e São Paulo, passeios, shows, teatro e acompanhamento em consultas médicas. Seis anos de experiência, Nissan Versa espaçoso e sempre limpo.">
+  <meta property="og:title" content="João Luiz Lochter · Transporte Executivo">
+  <meta property="og:description" content="Transfer para aeroportos, shows, teatro, passeios e consultas médicas na região de Sorocaba. Chame no WhatsApp: (15) 99738-1592.">
+  <meta property="og:image" content="https://jlochter.github.io/motorista.seujoao/assets/logo.jpeg">
+  <meta property="og:url" content="https://jlochter.github.io/motorista.seujoao/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="canonical" href="https://jlochter.github.io/motorista.seujoao/">
+  <link rel="icon" href="assets/logo.jpeg" type="image/jpeg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "João Luiz Lochter · Transporte Executivo",
+    "description": "Motorista particular em Sorocaba: transfer para aeroportos de Campinas e São Paulo, passeios, shows, teatro e acompanhamento em consultas médicas.",
+    "url": "https://jlochter.github.io/motorista.seujoao/",
+    "image": "https://jlochter.github.io/motorista.seujoao/assets/logo.jpeg",
+    "telephone": "+5515997381592",
+    "areaServed": ["Sorocaba", "Campinas", "São Paulo"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Sorocaba", "addressRegion": "SP", "addressCountry": "BR" }
+  }
+  </script>
+  <style>
+    :root {
+      --amarelo: #FFD400;
+      --amarelo-escuro: #F2B700;
+      --preto: #111111;
+      --cinza: #4a4a4a;
+      --cinza-claro: #f6f6f6;
+      --branco: #ffffff;
+      --whatsapp: #25D366;
+      --whatsapp-escuro: #1DA851;
+      --radius: 18px;
+      --sombra: 0 10px 30px rgba(0,0,0,.10);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--preto);
+      background: var(--branco);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+    /* Header */
+    header {
+      background: var(--preto);
+      color: var(--branco);
+      position: sticky; top: 0; z-index: 20;
+      border-bottom: 4px solid var(--amarelo);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: .7rem 0; gap: 1rem;
+    }
+    .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; font-weight: 800; letter-spacing: .02em; }
+    .brand img { width: 46px; height: 46px; border-radius: 50%; }
+    .brand span small { display: block; font-weight: 500; font-size: .72rem; color: var(--amarelo); letter-spacing: .12em; text-transform: uppercase; }
+    .nav ul { list-style: none; display: flex; gap: 1.4rem; }
+    .nav ul a { text-decoration: none; font-weight: 600; font-size: .95rem; opacity: .9; }
+    .nav ul a:hover { color: var(--amarelo); }
+    @media (max-width: 720px) { .nav ul { display: none; } }
+
+    /* Hero */
+    .hero {
+      background: var(--amarelo);
+      background-image: radial-gradient(circle at 15% 20%, rgba(255,255,255,.45) 0 6px, transparent 7px),
+                        radial-gradient(circle at 85% 70%, rgba(255,255,255,.35) 0 5px, transparent 6px),
+                        radial-gradient(circle at 70% 15%, rgba(0,0,0,.06) 0 3px, transparent 4px),
+                        radial-gradient(circle at 25% 80%, rgba(0,0,0,.06) 0 4px, transparent 5px);
+      padding: 4rem 0 3.5rem;
+    }
+    .hero .container {
+      display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: center;
+    }
+    .hero h1 { font-size: clamp(2rem, 4.5vw, 3.3rem); line-height: 1.12; font-weight: 900; }
+    .hero h1 em { font-style: normal; background: var(--preto); color: var(--amarelo); padding: 0 .35em; border-radius: 8px; }
+    .hero p.lead { font-size: 1.15rem; margin: 1.2rem 0 1.8rem; color: #222; max-width: 34rem; }
+    .hero img { width: min(380px, 80%); margin: 0 auto; border-radius: 50%; filter: drop-shadow(0 12px 24px rgba(0,0,0,.25)); }
+    @media (max-width: 820px) {
+      .hero .container { grid-template-columns: 1fr; text-align: center; }
+      .hero p.lead { margin-inline: auto; }
+      .hero img { order: -1; width: min(280px, 70%); }
+      .cta-row { justify-content: center; }
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: .6rem;
+      padding: .9rem 1.5rem; border-radius: 999px; font-weight: 700; text-decoration: none;
+      transition: transform .15s, box-shadow .15s, background .15s; font-size: 1rem;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0,0,0,.18); }
+    .btn-wa { background: var(--whatsapp); color: var(--branco); }
+    .btn-wa:hover { background: var(--whatsapp-escuro); }
+    .btn-dark { background: var(--preto); color: var(--amarelo); }
+    .btn svg { width: 22px; height: 22px; fill: currentColor; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: .8rem; }
+
+    /* Sections */
+    section { padding: 4rem 0; }
+    section h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; margin-bottom: .5rem;
+      display: inline-block; position: relative;
+    }
+    section h2::after {
+      content: ""; display: block; height: 8px; width: 60%; background: var(--amarelo);
+      border-radius: 4px; margin-top: .3rem;
+    }
+    section .sub { color: var(--cinza); margin-bottom: 2.2rem; max-width: 40rem; }
+
+    /* Serviços */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.4rem; }
+    .card {
+      background: var(--branco); border-radius: var(--radius); padding: 1.8rem;
+      box-shadow: var(--sombra); border-top: 6px solid var(--amarelo);
+      transition: transform .15s;
+    }
+    .card:hover { transform: translateY(-4px); }
+    .card .icon {
+      width: 56px; height: 56px; border-radius: 14px; background: var(--amarelo);
+      display: grid; place-items: center; margin-bottom: 1rem; font-size: 1.7rem;
+    }
+    .card h3 { font-size: 1.2rem; margin-bottom: .5rem; }
+    .card p { color: var(--cinza); font-size: .97rem; }
+    .servicos { background: var(--cinza-claro); }
+
+    /* Diferenciais */
+    .diferenciais ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; }
+    .diferenciais li {
+      display: flex; gap: .9rem; align-items: flex-start; padding: 1.2rem;
+      border: 2px solid #eee; border-radius: var(--radius);
+    }
+    .diferenciais li .check {
+      flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--preto); color: var(--amarelo);
+      display: grid; place-items: center; font-weight: 900;
+    }
+    .diferenciais li strong { display: block; margin-bottom: .15rem; }
+    .diferenciais li span { color: var(--cinza); font-size: .95rem; }
+
+    /* Região */
+    .regiao { background: var(--preto); color: var(--branco); }
+    .regiao h2::after { background: var(--amarelo); }
+    .regiao .sub { color: #cfcfcf; }
+    .tags { display: flex; flex-wrap: wrap; gap: .7rem; }
+    .tag {
+      background: #222; border: 2px solid var(--amarelo); color: var(--amarelo);
+      padding: .5rem 1.1rem; border-radius: 999px; font-weight: 700; font-size: .95rem;
+    }
+    .tag.solid { background: var(--amarelo); color: var(--preto); }
+    .regiao p.note { margin-top: 1.5rem; color: #cfcfcf; max-width: 40rem; }
+
+    /* Contato */
+    .contato { text-align: center; background: var(--amarelo); }
+    .contato h2::after { background: var(--preto); }
+    .contato .sub { margin-inline: auto; color: #222; }
+    .fone { font-size: clamp(1.6rem, 5vw, 2.6rem); font-weight: 900; letter-spacing: .02em; margin-bottom: 1.2rem; }
+    .fone a { text-decoration: none; }
+    .contato .hint { margin-top: 1.2rem; color: #333; font-size: .95rem; }
+
+    footer { background: var(--preto); color: #bbb; text-align: center; padding: 1.6rem 0; font-size: .9rem; }
+    footer strong { color: var(--amarelo); }
+
+    /* Botão flutuante */
+    .wa-float {
+      position: fixed; right: 1.2rem; bottom: 1.2rem; z-index: 30;
+      width: 62px; height: 62px; border-radius: 50%; background: var(--whatsapp);
+      display: grid; place-items: center; box-shadow: 0 8px 22px rgba(0,0,0,.3);
+      transition: transform .15s;
+    }
+    .wa-float:hover { transform: scale(1.08); background: var(--whatsapp-escuro); }
+    .wa-float svg { width: 34px; height: 34px; fill: #fff; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#inicio">
+      <img src="assets/logo.jpeg" alt="Logomarca João Luiz Lochter">
+      <span>João Luiz Lochter<small>Transporte Executivo</small></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#regiao">Região</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="container">
+    <div>
+      <h1>Transfer e viagens particulares com <em>conforto</em> e <em>confiança</em></h1>
+      <p class="lead">
+        Motorista particular na região de Sorocaba. Levo você aos aeroportos de Campinas e São Paulo,
+        acompanho em consultas médicas, shows e peças de teatro, e faço passeios com toda a tranquilidade que você merece.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/5515997381592?text=Ol%C3%A1%2C%20Seu%20Jo%C3%A3o!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20uma%20viagem." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-dark" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+    <img src="assets/logo.jpeg" alt="Logomarca: Transfer e Viagens Particulares, João Luiz Lochter, Transporte Executivo, (15) 99738-1592">
+  </div>
+</section>
+
+<section class="servicos" id="servicos">
+  <div class="container">
+    <h2>Serviços</h2>
+    <p class="sub">Viagens agendadas, sem pressa e sem surpresas. Você combina o horário e o Seu João cuida do resto.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="icon" aria-hidden="true">✈️</div>
+        <h3>Transfer para aeroportos</h3>
+        <p>Ida e volta para Viracopos (Campinas), Guarulhos e Congonhas (São Paulo). Pontualidade para você embarcar tranquilo e alguém de confiança te esperando na chegada.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">🏥</div>
+        <h3>Consultas e exames médicos</h3>
+        <p>Leva você até a clínica ou hospital, <strong>espera enquanto você é atendido</strong> e traz de volta para casa. Ideal para idosos e para quem não quer se preocupar com estacionamento.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">🗺️</div>
+        <h3>Passeios e viagens particulares</h3>
+        <p>Passeios em família, bate-volta para as praias do litoral paulista, compromissos em outras cidades e roteiros personalizados. Você define o destino e o tempo, ele define o conforto.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">🎭</div>
+        <h3>Shows e teatro</h3>
+        <p>Leva você ao show, à peça de teatro ou ao evento, <strong>espera até o final</strong> e traz de volta em segurança. Sem preocupação com trânsito, estacionamento ou horário de volta.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">🛣️</div>
+        <h3>Viagens longas para outros estados</h3>
+        <p>Precisa ir mais longe? Viagens para outros estados são feitas <strong>mediante orçamento</strong>, combinando roteiro, datas e paradas com antecedência. Fale no WhatsApp e receba uma proposta.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="diferenciais" id="diferenciais">
+  <div class="container">
+    <h2>Por que viajar com o Seu João</h2>
+    <p class="sub">Mais do que um motorista: alguém que trata cada passageiro com respeito e atenção.</p>
+    <ul>
+      <li><span class="check">✓</span><div><strong>Seis anos de experiência</strong><span>Rotina de estradas, aeroportos e trânsito das grandes cidades.</span></div></li>
+      <li><span class="check">✓</span><div><strong>Inúmeras viagens 5 estrelas</strong><span>Avaliação máxima de passageiros no Uber, viagem após viagem.</span></div></li>
+      <li><span class="check">✓</span><div><strong>Nissan Versa espaçoso</strong><span>Porta-malas amplo para bagagens e bastante espaço para as pernas.</span></div></li>
+      <li><span class="check">✓</span><div><strong>Carro sempre limpo</strong><span>Higienizado e organizado para cada passageiro.</span></div></li>
+      <li><span class="check">✓</span><div><strong>Respeito e discrição</strong><span>Atendimento cordial, sem pressa e com atenção às suas necessidades.</span></div></li>
+      <li><span class="check">✓</span><div><strong>Agendamento simples</strong><span>Basta uma mensagem no WhatsApp para combinar data, horário e valor.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="regiao" id="regiao">
+  <div class="container">
+    <h2>Região atendida</h2>
+    <p class="sub">Base em Sorocaba, com viagens frequentes para as principais cidades e aeroportos do estado.</p>
+    <div class="tags">
+      <span class="tag solid">Sorocaba e região</span>
+      <span class="tag">Aeroporto de Viracopos · Campinas</span>
+      <span class="tag">Aeroporto de Guarulhos · São Paulo</span>
+      <span class="tag">Aeroporto de Congonhas · São Paulo</span>
+      <span class="tag">Campinas</span>
+      <span class="tag">São Paulo</span>
+      <span class="tag">Praias do litoral paulista</span>
+      <span class="tag">Outros estados · sob orçamento</span>
+    </div>
+    <p class="note">Precisa ir para outro destino ou fazer uma viagem mais longa? Entre em contato e peça um orçamento. Viagens são combinadas com antecedência.</p>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="container">
+    <h2>Fale com o Seu João</h2>
+    <p class="sub">Peça seu orçamento ou agende sua viagem pelo WhatsApp.</p>
+    <p class="fone"><a href="tel:+5515997381592">(15) 99738-1592</a></p>
+    <a class="btn btn-wa" href="https://wa.me/5515997381592?text=Ol%C3%A1%2C%20Seu%20Jo%C3%A3o!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20uma%20viagem." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      Conversar no WhatsApp
+    </a>
+    <p class="hint">Atendimento por mensagem ou ligação. Responde assim que possível, inclusive fora do horário comercial.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <strong>João Luiz Lochter</strong> · Transfer e Viagens Particulares · Transporte Executivo · Sorocaba/SP
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5515997381592?text=Ol%C3%A1%2C%20Seu%20Jo%C3%A3o!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20uma%20viagem." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+</body>
+</html>
