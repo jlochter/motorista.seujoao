@@ -5,12 +5,12 @@ Página informativa estática (HTML + CSS, sem dependências) sobre os serviços
 ## Estrutura
 
 - `index.html` — a página completa
-- `assets/logo.jpeg` — logomarca (salve a imagem aqui com esse nome)
+- `assets/motorista-particular-sorocaba-joao-lochter.jpeg` — logomarca (salve a imagem aqui com esse nome)
 - `.nojekyll` — desativa o processamento Jekyll no GitHub Pages
 
 ## Publicar no GitHub Pages
 
-1. Salve a logomarca em `assets/logo.jpeg`.
+1. Salve a logomarca em `assets/motorista-particular-sorocaba-joao-lochter.jpeg`.
 2. Crie um repositório no GitHub e envie os arquivos:
 
    ```bash

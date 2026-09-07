@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>João Luiz Lochter · Transporte Executivo em Sorocaba</title>
-  <meta name="description" content="Motorista particular em Sorocaba: transfer para aeroportos de Campinas e São Paulo, passeios, shows, teatro e acompanhamento em consultas médicas. Seis anos de experiência, Nissan Versa espaçoso e sempre limpo.">
-  <meta property="og:title" content="João Luiz Lochter · Transporte Executivo">
+  <title>Motorista Particular em Sorocaba · Transfer para Aeroportos, Consultas e Viagens · João Luiz Lochter</title>
+  <meta name="description" content="Motorista particular em Sorocaba e região: transfer para os aeroportos de Viracopos (Campinas), Guarulhos e Congonhas (São Paulo), acompanhamento em consultas médicas, shows, teatro, praias e viagens. Seis anos de experiência, Nissan Versa espaçoso e sempre limpo. WhatsApp (15) 99738-1592.">
+  <meta property="og:title" content="Motorista Particular em Sorocaba · João Luiz Lochter">
   <meta property="og:description" content="Transfer para aeroportos, shows, teatro, passeios e consultas médicas na região de Sorocaba. Chame no WhatsApp: (15) 99738-1592.">
-  <meta property="og:image" content="https://jlochter.github.io/motorista.seujoao/assets/logo.jpeg">
+  <meta property="og:image" content="https://jlochter.github.io/motorista.seujoao/assets/motorista-particular-sorocaba-joao-lochter.jpeg">
   <meta property="og:url" content="https://jlochter.github.io/motorista.seujoao/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <link rel="canonical" href="https://jlochter.github.io/motorista.seujoao/">
-  <link rel="icon" href="assets/logo.jpeg" type="image/jpeg">
+  <link rel="icon" href="assets/motorista-particular-sorocaba-joao-lochter.jpeg" type="image/jpeg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -20,10 +20,31 @@
     "name": "João Luiz Lochter · Transporte Executivo",
     "description": "Motorista particular em Sorocaba: transfer para aeroportos de Campinas e São Paulo, passeios, shows, teatro e acompanhamento em consultas médicas.",
     "url": "https://jlochter.github.io/motorista.seujoao/",
-    "image": "https://jlochter.github.io/motorista.seujoao/assets/logo.jpeg",
+    "image": "https://jlochter.github.io/motorista.seujoao/assets/motorista-particular-sorocaba-joao-lochter.jpeg",
     "telephone": "+5515997381592",
-    "areaServed": ["Sorocaba", "Campinas", "São Paulo"],
-    "address": { "@type": "PostalAddress", "addressLocality": "Sorocaba", "addressRegion": "SP", "addressCountry": "BR" }
+    "priceRange": "$$",
+    "areaServed": ["Sorocaba", "Votorantim", "Itu", "Salto", "Campinas", "São Paulo", "Litoral Paulista"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Sorocaba", "addressRegion": "SP", "addressCountry": "BR" },
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" },
+    "sameAs": ["https://wa.me/5515997381592"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Quanto custa o transfer de Sorocaba para o aeroporto de Guarulhos ou Viracopos?",
+        "acceptedAnswer": { "@type": "Answer", "text": "O valor depende do destino, do horário e do número de passageiros. Envie uma mensagem no WhatsApp (15) 99738-1592 com a data e o aeroporto e receba um orçamento sem compromisso." } },
+      { "@type": "Question", "name": "O motorista espera durante a consulta médica?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim. O Seu João leva até a clínica ou hospital, aguarda o atendimento terminar e traz de volta para casa. O mesmo vale para shows, peças de teatro e outros compromissos." } },
+      { "@type": "Question", "name": "Quais cidades e regiões são atendidas?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sorocaba, Votorantim, Itu, Salto e região, com viagens para Campinas, São Paulo, aeroportos de Viracopos, Guarulhos e Congonhas, praias do litoral paulista e outros estados mediante orçamento." } },
+      { "@type": "Question", "name": "Como agendar uma viagem?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Basta enviar uma mensagem no WhatsApp (15) 99738-1592 informando data, horário, endereço de saída e destino. Recomenda-se agendar com antecedência, principalmente para aeroportos e viagens longas." } },
+      { "@type": "Question", "name": "Qual é o carro utilizado?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Um Nissan Versa espaçoso, com porta-malas amplo para bagagens, sempre limpo e higienizado." } }
+    ]
   }
   </script>
   <style>
@@ -167,6 +188,19 @@
     .fone a { text-decoration: none; }
     .contato .hint { margin-top: 1.2rem; color: #333; font-size: .95rem; }
 
+    /* FAQ */
+    .faq details {
+      border: 2px solid #eee; border-radius: var(--radius); padding: 1rem 1.3rem; margin-bottom: .8rem;
+      background: var(--branco);
+    }
+    .faq details[open] { border-color: var(--amarelo); }
+    .faq summary { font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; font-weight: 900; color: var(--amarelo-escuro); font-size: 1.3rem; line-height: 1; }
+    .faq details[open] summary::after { content: "–"; }
+    .faq details p { margin-top: .7rem; color: var(--cinza); }
+    .faq { background: var(--cinza-claro); }
+
     footer { background: var(--preto); color: #bbb; text-align: center; padding: 1.6rem 0; font-size: .9rem; }
     footer strong { color: var(--amarelo); }
 
@@ -186,7 +220,7 @@
 <header>
   <div class="container nav">
     <a class="brand" href="#inicio">
-      <img src="assets/logo.jpeg" alt="Logomarca João Luiz Lochter">
+      <img src="assets/motorista-particular-sorocaba-joao-lochter.jpeg" alt="Logomarca João Luiz Lochter, motorista particular em Sorocaba">
       <span>João Luiz Lochter<small>Transporte Executivo</small></span>
     </a>
     <nav aria-label="Navegação principal">
@@ -194,6 +228,7 @@
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#diferenciais">Diferenciais</a></li>
         <li><a href="#regiao">Região</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -203,10 +238,11 @@
 <section class="hero" id="inicio">
   <div class="container">
     <div>
-      <h1>Transfer e viagens particulares com <em>conforto</em> e <em>confiança</em></h1>
+      <h1>Motorista particular em <em>Sorocaba</em>: transfer para aeroportos, consultas e viagens</h1>
       <p class="lead">
-        Motorista particular na região de Sorocaba. Levo você aos aeroportos de Campinas e São Paulo,
-        acompanho em consultas médicas, shows e peças de teatro, e faço passeios com toda a tranquilidade que você merece.
+        Transporte executivo com conforto e confiança em Sorocaba, Votorantim, Itu, Salto e região.
+        Transfer para os aeroportos de Viracopos, Guarulhos e Congonhas, acompanhamento em consultas médicas,
+        shows, teatro, praias do litoral paulista e viagens para outros estados.
       </p>
       <div class="cta-row">
         <a class="btn btn-wa" href="https://wa.me/5515997381592?text=Ol%C3%A1%2C%20Seu%20Jo%C3%A3o!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20uma%20viagem." target="_blank" rel="noopener">
@@ -216,24 +252,24 @@
         <a class="btn btn-dark" href="#servicos">Ver serviços</a>
       </div>
     </div>
-    <img src="assets/logo.jpeg" alt="Logomarca: Transfer e Viagens Particulares, João Luiz Lochter, Transporte Executivo, (15) 99738-1592">
+    <img src="assets/motorista-particular-sorocaba-joao-lochter.jpeg" alt="Logomarca de João Luiz Lochter, motorista particular em Sorocaba: transfer e viagens particulares, transporte executivo, WhatsApp (15) 99738-1592">
   </div>
 </section>
 
 <section class="servicos" id="servicos">
   <div class="container">
     <h2>Serviços</h2>
-    <p class="sub">Viagens agendadas, sem pressa e sem surpresas. Você combina o horário e o Seu João cuida do resto.</p>
+    <p class="sub">Viagens agendadas saindo de Sorocaba e região, sem pressa e sem surpresas. Você combina o horário e o Seu João cuida do resto.</p>
     <div class="grid">
       <article class="card">
         <div class="icon" aria-hidden="true">✈️</div>
         <h3>Transfer para aeroportos</h3>
-        <p>Ida e volta para Viracopos (Campinas), Guarulhos e Congonhas (São Paulo). Pontualidade para você embarcar tranquilo e alguém de confiança te esperando na chegada.</p>
+        <p>Ida e volta de Sorocaba para o Aeroporto de Viracopos (Campinas), Aeroporto de Guarulhos e Aeroporto de Congonhas (São Paulo). Pontualidade para você embarcar tranquilo e alguém de confiança te esperando na chegada.</p>
       </article>
       <article class="card">
         <div class="icon" aria-hidden="true">🏥</div>
         <h3>Consultas e exames médicos</h3>
-        <p>Leva você até a clínica ou hospital, <strong>espera enquanto você é atendido</strong> e traz de volta para casa. Ideal para idosos e para quem não quer se preocupar com estacionamento.</p>
+        <p>Leva você até a clínica ou hospital em Sorocaba, Campinas ou São Paulo, <strong>espera enquanto você é atendido</strong> e traz de volta para casa. Ideal para idosos e para quem não quer se preocupar com estacionamento.</p>
       </article>
       <article class="card">
         <div class="icon" aria-hidden="true">🗺️</div>
@@ -274,7 +310,8 @@
     <h2>Região atendida</h2>
     <p class="sub">Base em Sorocaba, com viagens frequentes para as principais cidades e aeroportos do estado.</p>
     <div class="tags">
-      <span class="tag solid">Sorocaba e região</span>
+      <span class="tag solid">Sorocaba</span>
+      <span class="tag solid">Votorantim · Itu · Salto e região</span>
       <span class="tag">Aeroporto de Viracopos · Campinas</span>
       <span class="tag">Aeroporto de Guarulhos · São Paulo</span>
       <span class="tag">Aeroporto de Congonhas · São Paulo</span>
@@ -284,6 +321,33 @@
       <span class="tag">Outros estados · sob orçamento</span>
     </div>
     <p class="note">Precisa ir para outro destino ou fazer uma viagem mais longa? Entre em contato e peça um orçamento. Viagens são combinadas com antecedência.</p>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <h2>Perguntas frequentes</h2>
+    <p class="sub">Dúvidas comuns de quem procura um motorista particular em Sorocaba.</p>
+    <details>
+      <summary>Quanto custa o transfer de Sorocaba para o aeroporto de Guarulhos ou Viracopos?</summary>
+      <p>O valor depende do destino, do horário e do número de passageiros. Envie uma mensagem no WhatsApp <a href="https://wa.me/5515997381592" target="_blank" rel="noopener">(15) 99738-1592</a> com a data e o aeroporto e receba um orçamento sem compromisso.</p>
+    </details>
+    <details>
+      <summary>O motorista espera durante a consulta médica?</summary>
+      <p>Sim. O Seu João leva até a clínica ou hospital, aguarda o atendimento terminar e traz de volta para casa. O mesmo vale para shows, peças de teatro e outros compromissos.</p>
+    </details>
+    <details>
+      <summary>Quais cidades e regiões são atendidas?</summary>
+      <p>Sorocaba, Votorantim, Itu, Salto e região, com viagens para Campinas, São Paulo, aeroportos de Viracopos, Guarulhos e Congonhas, praias do litoral paulista e outros estados mediante orçamento.</p>
+    </details>
+    <details>
+      <summary>Como agendar uma viagem?</summary>
+      <p>Basta enviar uma mensagem no WhatsApp informando data, horário, endereço de saída e destino. Recomenda-se agendar com antecedência, principalmente para aeroportos e viagens longas.</p>
+    </details>
+    <details>
+      <summary>Qual é o carro utilizado?</summary>
+      <p>Um Nissan Versa espaçoso, com porta-malas amplo para bagagens, sempre limpo e higienizado.</p>
+    </details>
   </div>
 </section>
 
